@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var params = { page: 1, size: 10 }
+        console.log(Object.keys(params));
+        let paramsStr = ""
+        //Object.keys(params) // ["page", "size"]
+        Object.keys(params).forEach(key => {
+            paramsStr += key + "=" + params[key] + "&"
+        })
+        console.log(paramsStr.substr(0, paramsStr.lastIndexOf("&")));
+
+
+
+
+    </script>
+</body>
+
+</html>
